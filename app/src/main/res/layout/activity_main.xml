@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingLeft="@dimen/activity_horizontal_margin"
+		android:paddingRight="@dimen/activity_horizontal_margin"
+		android:paddingTop="@dimen/activity_vertical_margin"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:scrollbars="vertical"
+		tools:context="cc.koumakan.sensorcollector.MainActivity">
+	<ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="5dp"
+				android:scrollbars="vertical"
+				android:orientation="vertical">
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/t_top"
+					android:textSize="24sp"
+					android:text="@string/sensor"/>
+
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/tvs_accerleration"
+					android:text="@string/accerleration"/>
+
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/tvs_rotation"
+					android:text="@string/rotation"/>
+
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/tvs_magnetometer"
+					android:text="@string/magnetometer"/>
+
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/tvs_orientation"
+					android:text="@string/orientation"/>
+
+			<TextView
+					style="@style/SensorLabel"
+					android:id="@+id/tvs_gravity"
+					android:text="@string/gravity"/>
+
+			<LinearLayout
+					android:padding="5dp"
+					android:layout_marginTop="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				<TextView
+						style="@style/SensorButton"
+						android:textColor="#000000"
+						android:text="@string/motion"/>
+				<EditText
+						style="@style/SensorButton"
+						android:layout_marginStart="10dp"
+						android:layout_width="100dp"
+						android:textColor="@color/blue"
+						android:singleLine="true"
+						android:id="@+id/input"
+				/>
+
+			</LinearLayout>
+			<Button
+					style="@style/SensorButton"
+					android:background="@color/blue"
+					android:id="@+id/btn_collect"
+					android:text="@string/b_start"/>
+			<LinearLayout
+					android:layout_marginTop="5dp"
+					android:paddingBottom="15dp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+				<Button
+						style="@style/SensorButton"
+						android:background="@color/purpul"
+						android:clickable="false"
+						android:id="@+id/btn_export"
+						android:text="@string/b_export"/>
+				<Button
+						style="@style/SensorButton"
+						android:layout_marginStart="10dp"
+						android:background="@color/blue"
+						android:id="@+id/btn_reset"
+						android:text="@string/b_reset"/>
+
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<Button
+			style="@style/SensorButton"
+			android:layout_alignParentEnd="true"
+			android:background="@color/purpul"
+			android:id="@+id/btn_avg"
+			android:text="@string/b_avg"/>
+
+</RelativeLayout>

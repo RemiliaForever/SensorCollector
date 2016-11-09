@@ -1,0 +1,25 @@
+<resources>
+	<string name="app_name">Sensor Collector</string>
+
+	<string name="x">X</string>
+	<string name="y">Y</string>
+	<string name="z">Z</string>
+
+	<string name="accerleration">Accerleration</string>
+	<string name="rotation">Rotation</string>
+	<string name="magnetometer">Magnetometer</string>
+	<string name="orientation">Orientation</string>
+	<string name="gravity">Gravity</string>
+
+	<string name="sensor">Sensor</string>
+	<string name="zero">0</string>
+
+	<string name="motion">TYPE MOTION:</string>
+
+	<string name="b_avg">DISPLAY AVG DATA</string>
+	<string name="b_return">RETURN MAINVIEW</string>
+	<string name="b_start">START COLLECTING DATA</string>
+	<string name="b_stop">STOP COLLECTING DATA</string>
+	<string name="b_reset">RESET</string>
+	<string name="b_export">EXPORT</string>
+</resources>
